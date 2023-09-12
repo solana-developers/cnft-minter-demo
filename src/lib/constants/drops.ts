@@ -76,7 +76,7 @@ export const COLLECTION_DETAILS = {
 export const GENERIC_METADATA_DEFAULTS = {
   symbol: "DevRel",
   collection: {
-    name: "Solana Foundation DevRel Demos",
+    name: "Solana Developers Demos",
     family: "DevRel",
   },
   description: SITE_DESCRIPTION,
