@@ -7,9 +7,6 @@ export const SITE_NAME = "cNFT Minter Demo";
 export const SITE_DESCRIPTION =
   "Demo application to mint compressed NFTs using Solana Pay QR codes. By the Solana Foundation's developer relations team.";
 
-export const SITE_DOMAIN =
-  process.env.NODE_ENV == "development" ? "localhost:3000" : "sf.nick.af";
-
 export const SITE_URL =
   process.env.NODE_ENV == "development"
     ? "http://localhost:3000"
@@ -25,15 +22,4 @@ export const TWITTER = {
   username: "solana_devs",
   url: "https://twitter.com/solana_devs",
   website: "https://solana.com/developers",
-};
-
-/**
- * Personal information for Nick :)
- */
-export const NICK = {
-  name: "Nick Frostbutter",
-  twitter: "@nickfrosty",
-  username: "nickfrosty",
-  twitterUrl: "https://twitter.com/nickfrosty",
-  website: "https://nick.af",
 };

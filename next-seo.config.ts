@@ -1,5 +1,4 @@
 import {
-  NICK,
   SITE_DESCRIPTION,
   SITE_NAME,
   SITE_URL,
@@ -30,7 +29,7 @@ const config: DefaultSeoProps = {
     ],
   },
   twitter: {
-    handle: NICK.twitter,
+    handle: TWITTER.handle,
     site: TWITTER.handle,
     cardType: "summary",
     // cardType: "summary_large_image",
