@@ -10,6 +10,10 @@
   },
   "external_url": "https://solana.com/developers",
   "properties": {
+    "attributes": {
+      "trait_type": "type",
+      "value": "solana_devs"
+    },
     "files": [
       {
         "uri": "https://bafkreiesqzrm26vf5d4d6meuzqtdjmtg63u27so22rp57xdtcpq5nleulm.ipfs.nftstorage.link/",
