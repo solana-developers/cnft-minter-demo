@@ -3,12 +3,9 @@ import type { AppProps } from "next/app";
 import { DefaultSeo } from "next-seo";
 import SEO from "@@/next-seo.config";
 // import { SessionProvider } from "next-auth/react";
-import { ContextProvider } from "@/contexts/ContextProvider";
 
 import { Inter } from "next/font/google";
 import DefaultToaster from "@/components/core/DefaultToaster";
-
-require("@solana/wallet-adapter-react-ui/styles.css");
 
 // load and set the desired site font
 const font = Inter({
@@ -22,7 +19,7 @@ export default function App({
 }: AppProps) {
   return (
     // <SessionProvider session={session}>
-    <ContextProvider>
+    <>
       <style jsx global>
         {`
           :root {
@@ -35,7 +32,7 @@ export default function App({
       <DefaultSeo {...SEO} />
 
       <Component {...pageProps} />
-    </ContextProvider>
+    </>
     // </SessionProvider>
   );
 }
