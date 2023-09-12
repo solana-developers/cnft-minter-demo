@@ -1,0 +1,27 @@
+{
+  "name": "Demo #1 - solana_devs",
+  "symbol": "DevRel",
+  "description": "Demo NFT for showing off Solana",
+  "seller_fee_basis_points": 0,
+  "image": "https://bafkreiesqzrm26vf5d4d6meuzqtdjmtg63u27so22rp57xdtcpq5nleulm.ipfs.nftstorage.link/",
+  "collection": {
+    "name": "DevRel Demos",
+    "family": "DevRel"
+  },
+  "external_url": "https://solana.com/developers",
+  "properties": {
+    "files": [
+      {
+        "uri": "https://bafkreiesqzrm26vf5d4d6meuzqtdjmtg63u27so22rp57xdtcpq5nleulm.ipfs.nftstorage.link/",
+        "type": "image/jpeg"
+      }
+    ],
+    "category": "image",
+    "creators": [
+      {
+        "address": "nickb1dAk4hKpHVPZenpzqVtw2F8RHnCq27QcfiReXD",
+        "share": 100
+      }
+    ]
+  }
+}

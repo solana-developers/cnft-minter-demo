@@ -1,0 +1,125 @@
+.main {
+  @apply p-8 lg:p-10;
+  @apply flex flex-col items-center gap-8;
+  @apply justify-between;
+}
+
+.heading {
+  @apply my-8 text-5xl font-bold;
+  @apply !drop-shadow-default;
+}
+
+.tagline {
+  @apply text-2xl text-center;
+  @apply drop-shadow-default;
+}
+
+.cta {
+  max-width: var(--max-width);
+  @apply flex items-center justify-between gap-8;
+  font-size: 0.85rem;
+  width: 100%;
+  z-index: 2;
+  font-family: var(--font-mono);
+}
+
+.cta .code {
+  @apply font-mono font-bold;
+}
+
+.card {
+  @apply block w-full px-5 py-4;
+  @apply rounded-xl;
+  @apply bg-transparent border border-transparent;
+  transition:
+    background 200ms,
+    border 200ms;
+}
+.card h2 {
+  @apply mb-3 text-lg font-semibold;
+  @apply flex items-center w-full gap-3;
+  @apply mb-2 md:mb-0;
+}
+
+.card .arrow {
+  @apply max-w-[14px];
+  transition: transform 200ms;
+}
+.card p {
+  @apply m-0 opacity-60 max-w-[40ch] leading-6;
+  @apply text-sm;
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    @apply bg-gray-900;
+    @apply border-gray-700;
+  }
+
+  .card:hover .arrow {
+    transform: translateX(5px);
+  }
+}
+
+.logo {
+  @apply font-bold text-8xl;
+  @apply font-mono !drop-shadow-default;
+}
+
+@media (prefers-reduced-motion) {
+  .card:hover .arrow {
+    transform: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .card {
+    padding: 1rem 2.5rem;
+  }
+
+  .center::before {
+    transform: none;
+    height: 300px;
+  }
+
+  .cta p {
+    align-items: center;
+    inset: 0 0 auto;
+    padding: 2rem 1rem 1.4rem;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
+    background: linear-gradient(
+      to bottom,
+      rgba(var(--background-start-rgb), 1),
+      rgba(var(--callout-rgb), 0.5)
+    );
+    background-clip: padding-box;
+    backdrop-filter: blur(24px);
+  }
+
+  .cta div {
+    align-items: flex-end;
+    pointer-events: none;
+    inset: auto 0 0;
+    padding: 2rem;
+    height: 200px;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgb(var(--background-end-rgb)) 40%
+    );
+    z-index: 1;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}

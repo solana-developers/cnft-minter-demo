@@ -1,0 +1,49 @@
+.gridTitle {
+  @apply my-8 text-3xl font-semibold text-center;
+}
+
+.cardGrid {
+  @apply container grid gap-4 mx-auto;
+  @apply sm:grid-cols-2;
+  @apply lg:max-w-[80%] md:grid-cols-3;
+}
+
+.card {
+  @apply block w-full;
+  @apply bg-transparent border border-transparent rounded-xl;
+  @apply px-8 py-4 md:px-5 md:py-4;
+  @apply transition;
+}
+
+.card h2 {
+  @apply mb-3 text-lg font-semibold;
+  @apply flex items-center w-full gap-3;
+  @apply mb-2 md:mb-0;
+}
+
+.card .arrow {
+  @apply max-w-[14px];
+  @apply transform transition-[200ms];
+}
+
+.card p {
+  @apply m-0 opacity-60 max-w-[40ch] leading-6;
+  @apply text-sm;
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    @apply bg-gray-900 border-gray-700;
+  }
+
+  .card:hover .arrow {
+    transform: translateX(5px);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .card:hover .arrow {
+    @apply transform-none;
+  }
+}
