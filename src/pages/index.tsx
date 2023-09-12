@@ -83,19 +83,40 @@ export default function Page() {
         title={"Explore Solana and Compressed NFTs"}
         cards={[
           {
-            label: "Feature #1",
-            href: "#",
-            description: "Checkout this super cool thing that we can do",
+            label: "Solana Docs",
+            href: "https://docs.solana.com",
+            description:
+              "The official core documentation for the Solana blockchain",
           },
           {
-            label: "Feature #2",
-            href: "#",
-            description: "Checkout this super cool thing that we can do",
+            label: "Developer Resources",
+            href: "https://solana.com/hyperdrive/resources",
+            description:
+              "Collection of top Solana developer quickstart resources",
           },
           {
-            label: "Feature #3",
-            href: "#",
-            description: "Checkout this super cool thing that we can do",
+            label: "Solana StackExchange",
+            href: "https://solana.stackexchange.com/",
+            description:
+              "Ask questions and get answers from developers in the Solana community",
+          },
+          {
+            label: "cNFT JavaScript Guide",
+            href: "https://solana.com/developers/guides/javascript/compressed-nfts",
+            description:
+              "Developer guide for creating compressed NFTs with JavaScript",
+          },
+          {
+            label: "cNFT Livestream",
+            href: "https://youtu.be/LxhTxS9DexU",
+            description:
+              "Livestream tutorial on how to use State Compression and compressed NFTs on Solana",
+          },
+          {
+            label: "Solana Pay Docs",
+            href: "https://docs.solanapay.com",
+            description:
+              "Explore the SolanaPay protocol spec that enables interactions using QR codes",
           },
         ]}
       />
