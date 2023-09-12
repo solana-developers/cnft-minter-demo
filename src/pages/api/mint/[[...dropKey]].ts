@@ -5,7 +5,7 @@
  */
 
 import { debug } from "@/lib/utils/logs";
-import { SITE_NAME } from "@/lib/constants";
+import { SITE_DESCRIPTION, SITE_NAME } from "@/lib/constants";
 import type { NextApiRequest, NextApiResponse } from "next";
 import { SOLANA_KEYPAIR } from "@/lib/solana/general";
 import { SolanaConnection } from "@/lib/solana/SolanaConnection";
@@ -100,7 +100,7 @@ export default async function handler(
       return res.status(200).json(
         Object.assign(
           buildSolanaPayGetResponse({
-            message: "QR artwork, generated with AI",
+            message: SITE_DESCRIPTION,
             label: SITE_NAME,
           }),
           // send drop's metadata to the client (when desired)
@@ -152,7 +152,7 @@ export default async function handler(
      */
     return res.status(200).json(
       buildSolanaPayPostResponse({
-        message: "Mint QR artwork from QRT", // drop.metadata.name - should we show the nft name?,
+        message: SITE_DESCRIPTION, // drop.metadata.name - should we show the nft name?,
         transaction,
         signers: [SOLANA_KEYPAIR],
       }),
